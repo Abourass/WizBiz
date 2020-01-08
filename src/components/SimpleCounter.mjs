@@ -7,4 +7,4 @@ export const SimpleCounter = {
   render: ({count}) => html`<button onclick="${increaseCount}">Count: ${count}</button>`
 };
 
-define('Simple-Counter', SimpleCounter);
+define('simple-counter', SimpleCounter);
