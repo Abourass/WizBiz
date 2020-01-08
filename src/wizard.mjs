@@ -1,14 +1,3 @@
-import {html, define} from 'https://unpkg.com/hybrids@4.0.4/src';
-
-export function increaseCount(host){
-  host.count += 1;
-}
-
-export const SimpleCounter = {
-  count: 0,
-  render: ({count}) => html`<button onclick="${increaseCount}">Count: ${count}</button>`
-};
-
 const Wizard = function(className, props) {
   const classes = {
     [className]: class {
@@ -40,6 +29,5 @@ const Wizard = function(className, props) {
 
 const sample = new Wizard('superspan', {state: {clicked: false}});
 
-define('simple-counter', SimpleCounter);
 console.log(sample);
 
